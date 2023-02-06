@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Way Bill Portal</title>
+<style>
+    .container{
+        margin: -20px;
+        background: linear-gradient(to right,  #310bdb 0%,#b9e04e 40%,#6406b1 70%,#d4611e 100%);
+        padding-left: 20px;
+        padding-top: 10px;
+        padding-bottom: 1px;
+    }
+    h4{
+        text-align: center;
+        color: rgb(28, 28, 226);
+    }
+    h5{
+        color: black;
+        margin: 0%;
+    }
+    h2{
+        color: white;
+        margin-top: -50px;
+       margin-left: 80px;
+       margin-bottom: 30px;
+       
+    }
+    h6{
+        text-align: center;
+    }
+    .logo{
+        margin: 50xp;
+    }
+    .contain{
+        margin: -20px;
+        padding-left: 20px;
+        background:linear-gradient(to right, #11c9e9 0%,#9dc1d3 40%,#87f1ce 70%,#0cd487 100%)
+    }
+    .container1{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding-left: 5px;
+        background: linear-gradient(to right, #180dbb, #f6f6f6);
+    }
+    .container2{
+        margin: 0%;
+        display: flex;
+        justify-content:space-between;
+    }
+    .container3{
+        margin: 0%;
+        display: flex;
+        justify-content: space-between;
+    }
+    img{
+        width: 20mm;
+        height: 18mm;
+        margin-top: 10px;
+
+    }
+    .btn1{
+        margin-top: 10px;
+        margin-left: 550px;
+        color:white;
+        border-color: rgb(244, 240, 250);
+        background-color: rgb(182, 10, 110);
+        font-size:4mm;
+    }
+    .btn2{
+        
+        color:white;
+        border-color: rgb(244, 240, 250);
+        background-color: rgb(73, 6, 196);
+        font-size:4mm;
+    }
+    .btn3{
+        border-color: rgb(244, 240, 250);
+        color:white;
+        background-color: rgb(233, 53, 21);
+        font-size:4mm;
+    }
+    #box:hover{
+        background-color: rgb(20, 17, 17);
+    }
+    .border1{
+        display: flex;
+    }
+   
+</style>
+</head>
+<body>
+    <div class="container">
+        <div id = "logo">
+            <img src="https://taxmantra.com/wp-content/uploads/2017/06/Electronic-way-bill.jpg" alt= "MyWebsite.com">
+            <h2>E-Way Bill System</h2>
+        </div>
+
+    </div>
+
+    <div class="contain">
+        <h3>e-Invoice Portal</h3>
+    </div>
+
+    <h4>E-WAY BILL ENTRY FORM</h4>
+
+    <div class= "container1">
+        <h5>Transactin Details</h5>
+    </div>
+
+   <div class = "container2">
+    <div class="item" id="item1">Supply Type: <input type = "radio" name ="test">outward <input type="radio" name="test">inward </div>
+    <div class="item" id="item1">Sub Type: <input type = "radio" name ="test1">supply <input type="radio" name ="test1">export <input type = "radio" name ="test1">for own use <input type="radio" name ="test1">job work <input type = "radio" name ="test1">others</div>
+    <div class="item" id="item1">Document Type: <select name="state" id="state" class="form-control">
+        <option value="Tax Invoice">Tax Invoice</option>
+        <option value="General">General</option>
+        <option value="Regular Tax">Regular Tax</option>
+        </select>
+     </div>
+   </div>
+
+   <div class = "container3">
+    <div class="item" id="item1">Document Date:<input type ="date"></div>
+    <div class="item" id="item1">Transaction Type:<select name="state" id="state" class="form-control">
+        <option value="Tax Invoice">Weekly</option>
+        <option value="General">General</option>
+        <option value="Regular Tax">Regular</option>
+        </select></div>
+    <div class="item" id="item1">Document no:<input type="text" value="Enter Number"></div>
+   </div>
+
+   <div class= "container1">
+    <h5>Bill From</h6>
+   </div>
+
+   <form action="backend.php">
+    <div>
+        Name  : <input type ="text" value="Enter Name" name = "myname">
+    </div>
+    <div>
+        GSTIN : <input type ="text" value="Enter GSTIN" name = "mygstin">
+    </div>
+    <div>
+        State : <input type ="text" value="Enter State"name = "mystate">
+    </div>
+  </form>
+
+   <div class= "container1">
+    <h5>Dispatch From</h6>
+   </div>
+   <form action="backend.php">
+    <div>
+        Address : <input type ="text" value="Enter Address" name = "myaddress">
+    </div>
+    <div>
+        Place : <input type ="text" value="Enter Place" name = "myplace">
+    </div>
+    <div>
+        Pincode : <input type ="text" value="Enter Pincode" name = "mypin">
+        <select name="state" id="state" class="form-control">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            </select>
+    </div>
+   </form>
+   
+
+   <div class= "container1">
+    <h5>Bill To</h6>
+   </div>
+   <form action="backend.php">
+    <div>
+        Name : <input type ="text" value="Enter Name" name = "myname">
+    </div>
+    <div>
+        GSTIN : <input type ="text" value="Enter GSTIN" name = "mygstin">
+    </div>
+    <div>
+        State : <select name="state" id="state" class="form-control">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            </select>
+    </div>
+   </form>
+
+   <div class= "container1">
+    <h5>Ship To</h6>
+   </div>
+   <form action="backend.php">
+    <div>
+        Address : <input type ="text" value="Enter Address" name = "myaddress">
+    </div>
+    <div>
+        Place : <input type ="text" value="Enter Place" name = "myplace">
+    </div>
+    <div>
+        Pincode : <input type ="text" value="Enter Pincode" name = "mypin"><select name="state" id="state" class="form-control">
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            </select>
+    </div>
+   </form>
+
+   <div class= "container1">
+    <h5>Transportation Details</h6>
+   </div>
+   <div class = "container2">
+    <div class="item" id="item1">Transporter Id: <input type = "text" value="Enter Id"></div>
+    <div class="item" id="item1">Transporter Name: <input type = "text" value="Enter Name"></div>
+    <div class="item" id="item1">Approximate Distance: <input type ="text" value="Enter Distance"></div>
+   </div>
+
+   <div class= "container1">
+    <h5>Part-B</h6>
+   </div>
+   <div class = "container2">
+    <div class="item" id="item1">Mode: <input type = "radio" name ="test2">Road <input type = "radio" name ="test2">Rail <input type="radio" name ="test2">Air</div>
+    <div class="item" id="item1">Vehicle Type: <input type = "radio" name ="test3">Regular <input type="radio" name ="test3">Over dimensional cargo</div>
+    <div class="item" id="item1">Vehicle Number: <input type ="text" value="Enter Number"></div>
+   </div>
+    <button class="btn1" id="box">Previous</button>
+    <button class="btn2" id="box">Submit</button>
+    <button class="btn3" id="box">Exit</button>
+
+</body>
+</html>
